@@ -1,5 +1,4 @@
 import { IColor, cards } from './IColor';
-import { highestCardRule } from './Red';
 import { Card } from '../Card';
 import R = require('ramda');
 
