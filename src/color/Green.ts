@@ -1,7 +1,11 @@
-import { IColor } from "./IColor";
+import { IColor, cards } from './IColor';
 import { highestCardRule } from './Red';
+import { Card } from '../Card';
+import R = require('ramda');
+
+const even: (a: Card[]) => Card[] = R.filter((card: Card) => card.value % 2 == 0)
 
 export const GREEN: IColor = {
   ordinal: 4,
-  rule: highestCardRule
+  rule: cards(even)
 };
