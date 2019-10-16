@@ -1,15 +1,14 @@
-import { Color } from './Color';
+import { IColor } from "./color/IColor";
 
 export class Card {
-
-  color: Color;
+  color: IColor;
   value: number;
-  constructor(color:Color,value:number){
+  constructor(color:IColor,value:number){
     this.color =color;
     this.value = value;
   }
    
   effective():number {
-    return 10*this.value +this.color
+    return 10*this.value +this.color.ordinal
   }
 }
