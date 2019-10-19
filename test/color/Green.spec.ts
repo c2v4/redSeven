@@ -1,9 +1,6 @@
-import { YELLOW } from '../../src/color/Yellow';
+
 import { Card } from '../../src/Card';
-import { GREEN } from '../../src/color/Green';
-import { VIOLET } from '../../src/color/Violet';
-import { INDIGO } from '../../src/color/Indigo';
-import { RED } from '../../src/color/Red';
+import { GREEN, INDIGO, RED, VIOLET, YELLOW } from '../../src/color/Color';
 test("Green - most even cards",()=>{
     expect(GREEN.rule([
         new Card(YELLOW,4),

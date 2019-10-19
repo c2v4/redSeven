@@ -1,11 +1,6 @@
-import { YELLOW } from '../../src/color/Yellow';
 import { Card } from '../../src/Card';
-import { GREEN } from '../../src/color/Green';
-import { VIOLET } from '../../src/color/Violet';
-import { INDIGO } from '../../src/color/Indigo';
-import { RED } from '../../src/color/Red';
-import { BLUE } from '../../src/color/Blue';
-import { ORANGE } from '../../src/color/Orange';
+import {BLUE, ORANGE, YELLOW, GREEN} from '../../src/color/Color'
+
 test("Blue - cards of all different color",()=>{
     expect(BLUE.rule([
         new Card(ORANGE,5),

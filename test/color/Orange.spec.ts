@@ -1,10 +1,5 @@
 import { Card } from "../../src/Card";
-import { YELLOW } from '../../src/color/Yellow';
-import { BLUE } from '../../src/color/Blue';
-import { GREEN } from '../../src/color/Green';
-import { INDIGO } from '../../src/color/Indigo';
-import { ORANGE } from '../../src/color/Orange';
-import { VIOLET } from '../../src/color/Violet';
+import { BLUE, GREEN, INDIGO, ORANGE, VIOLET, YELLOW } from '../../src/color/Color';
 
 test("Orange - cards of one number", () => {
   expect(

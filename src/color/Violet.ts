@@ -1,7 +1,10 @@
-import { IColor } from "./IColor";
-import { highestCardRule } from './Red';
+import { IColor, highestCardRule, cards } from './IColor';
+import { Card } from '../Card';
+import R = require('ramda');
 
-export const VIOLET: IColor = {
+const below4: (a: Card[]) => Card[] = R.filter((c:Card) => c.value<4)
+
+export const _VIOLET: IColor = {
   ordinal: 1,
-  rule: highestCardRule
+  rule: cards(below4)
 };

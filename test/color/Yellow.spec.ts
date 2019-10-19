@@ -1,8 +1,5 @@
-import { YELLOW } from '../../src/color/Yellow';
 import { Card } from '../../src/Card';
-import { ORANGE } from '../../src/color/Orange';
-import { GREEN } from '../../src/color/Green';
-import { BLUE } from '../../src/color/Blue';
+import { BLUE, GREEN, ORANGE, YELLOW } from '../../src/color/Color';
 test("Yellow - cards of one color",()=>{
     expect(YELLOW.rule([
         new Card(YELLOW,2),

@@ -4,7 +4,7 @@ import R = require('ramda');
 
 const even: (a: Card[]) => Card[] = R.filter((card: Card) => card.value % 2 == 0)
 
-export const GREEN: IColor = {
+export const _GREEN: IColor = {
   ordinal: 4,
   rule: cards(even)
 };

@@ -10,7 +10,7 @@ const ofAllDifferentColor: (a: Card[]) => Card[] =
     R.groupBy(color)
   )
 
-export const BLUE: IColor = {
+export const _BLUE: IColor = {
   ordinal: 3,
   rule: cards(ofAllDifferentColor)
 };
