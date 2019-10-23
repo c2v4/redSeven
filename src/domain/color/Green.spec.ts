@@ -1,6 +1,6 @@
 
-import { Card } from '../../src/Card';
-import { GREEN, INDIGO, RED, VIOLET, YELLOW } from '../../src/color/Color';
+import { Card } from '../Card';
+import { GREEN, INDIGO, RED, VIOLET, YELLOW } from './Color';
 test("Green - most even cards",()=>{
     expect(GREEN.rule([
         new Card(YELLOW,4),
@@ -14,4 +14,4 @@ test("Green - most even cards",()=>{
         new Card(RED,1)
     ]
     )).toBeGreaterThan(0);
-})
+});

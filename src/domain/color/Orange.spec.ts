@@ -1,5 +1,5 @@
-import { Card } from "../../src/Card";
-import { BLUE, GREEN, INDIGO, ORANGE, VIOLET, YELLOW } from '../../src/color/Color';
+import { Card } from "../Card";
+import { BLUE, GREEN, INDIGO, ORANGE, VIOLET, YELLOW } from './Color';
 
 test("Orange - cards of one number", () => {
   expect(

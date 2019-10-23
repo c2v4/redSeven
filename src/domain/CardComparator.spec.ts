@@ -1,6 +1,6 @@
-import { Card } from "../src/Card";
-import { cardComparator } from "../src/CardComparator";
-import { BLUE, RED, VIOLET } from '../src/color/Color';
+import { Card } from "./Card";
+import { cardComparator } from "./CardComparator";
+import { BLUE, RED, VIOLET } from './color/Color';
 test("Compare 2 cards", () => {
   expect(
     cardComparator(new Card(VIOLET, 3), new Card(BLUE, 5))

@@ -1,5 +1,5 @@
-import { Card } from '../../src/Card';
-import {BLUE, ORANGE, YELLOW, GREEN} from '../../src/color/Color'
+import { Card } from '../Card';
+import {BLUE, ORANGE, YELLOW, GREEN} from './Color'
 
 test("Blue - cards of all different color",()=>{
     expect(BLUE.rule([
@@ -14,4 +14,4 @@ test("Blue - cards of all different color",()=>{
         new Card(GREEN,1)
     ]
     )).toBeGreaterThan(0);
-})
+});

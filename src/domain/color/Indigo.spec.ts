@@ -1,5 +1,5 @@
-import { INDIGO, YELLOW, VIOLET, GREEN, RED } from "../../src/color/Color";
-import { Card } from "../../src/Card";
+import { INDIGO, YELLOW, VIOLET, GREEN, RED } from "./Color";
+import { Card } from "../Card";
 
 test('Indigo - longest Run', () => {
     expect(INDIGO.rule([

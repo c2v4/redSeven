@@ -1,5 +1,5 @@
-import { ORANGE, YELLOW, BLUE, GREEN, VIOLET, INDIGO } from "../../src/color/Color";
-import { Card } from "../../src/Card";
+import { ORANGE, YELLOW, BLUE, GREEN, VIOLET, INDIGO } from "./Color";
+import { Card } from "../Card";
 
 test("Violet - most cards below 4", ()=>{
     expect(
@@ -18,4 +18,4 @@ test("Violet - most cards below 4", ()=>{
           ]
         )
       ).toBeGreaterThan(0);
-})
+});

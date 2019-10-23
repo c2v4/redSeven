@@ -13,3 +13,4 @@ export { _GREEN as GREEN };
 export { _BLUE as BLUE };
 export { _INDIGO as INDIGO };
 export { _VIOLET as VIOLET };
+export const COLORS = [_VIOLET,_INDIGO,_BLUE,_GREEN,_YELLOW,_ORANGE,_RED];

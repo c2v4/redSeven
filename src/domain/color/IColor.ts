@@ -17,14 +17,14 @@ export const ofOne = (grouper: (a: Card) => string) => R.compose(
   longestArray,
   (arg:{ [index: string]: Card[] }) => R.values(arg),
   R.groupBy(grouper)
-)
+);
 
 export const cards: (filter: (a:Card[]) => Card[]) => Rule = filter => (
   first,
   second
 ) => {
-  var firstApplicable = filter(first);
-  var secondApplicable = filter(second);
+  const firstApplicable = filter(first);
+  const secondApplicable = filter(second);
   const differenceInSizes = firstApplicable.length - secondApplicable.length;
   if (differenceInSizes == 0) {
     return highestCardRule(firstApplicable, secondApplicable);

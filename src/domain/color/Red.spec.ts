@@ -1,5 +1,5 @@
-import { Card } from "../../src/Card";
-import {BLUE, ORANGE, YELLOW, GREEN, VIOLET, INDIGO, RED} from '../../src/color/Color'
+import { Card } from "../Card";
+import {BLUE, ORANGE, YELLOW, GREEN, VIOLET, INDIGO, RED} from './Color'
 
 test("Red - highest card rule", () => {
   expect(RED.rule([
